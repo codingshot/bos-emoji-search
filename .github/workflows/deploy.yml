@@ -29,6 +29,7 @@ on:
         required: true
 jobs:
   deploy-components:
+    timeout-minutes: 60
     runs-on: ubuntu-latest
     name: Deploy to ${{ inputs.network }}
     env:
